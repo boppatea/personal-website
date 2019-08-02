@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Jeong Joo Park - a software engineer & cloud associate</title>
+    <link rel="stylesheet" href="{% static "./css/styles.css" %}">
+    <link rel="icon" href="{% static "./img/speech-bubble.png" %}">
+    <link href="https://fonts.googleapis.com/css?family=Butterfly+Kids|Dancing+Script|Darker+Grotesque|Patrick+Hand|Raleway|Tangerine&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="nav-bar" id="nav-bar">
+        <a href="{% url 'web_app:index' %}"><img src="{% static "img/sun (3).png" %}" alt="" height="100px" width="100px" style="float: left;"></a>
+        <a href="{% url 'web_app:index' %}">About</a>
+        <a href="{% url 'web_app:work' %}">Work</a>
+    </div>
+    <div class="nav-container">
+      {% block nav_block %}
+
+      {% endblock %}
+    </div>
+    <div class="bottom-container">
+        <a class="footer-link" href="https://www.linkedin.com/">LinkedIn</a>
+        <a class="footer-link" href="https://jeongjoopark.blogspot.com/">Blog</a>
+        <a class="footer-link" href="https://github.com/boppatea">GitHub</a>
+        <p class="copyright">© 2019 Jeong Joo Park. All rights reserved.</p>
+    </div>
+    <div class="foot-container">
+      {% block foot_block %}
+
+      {% endblock %}
+    </div>
+  </body>
+</html>

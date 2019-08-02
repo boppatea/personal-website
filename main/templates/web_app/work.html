@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+{% extends "web_app/base.html"%}
+{% load staticfiles %}
+
+  {% block nav_block %}
+    <div class="top-container">
+      <img class="top-cloud" src="{% static "img/upload.png" %}" alt="cloud-img" height="100px" width="100px" style="top: 100px;">
+      <h1>Work.</h1>
+      <p class="softext">a student for life.</p>
+      <img class="bottom-cloud" src="{% static "img/upload.png" %}" alt="cloud-img" height="100px" width="100px" style="bottom: 50px;">
+    </div>
+    <div class="middle-container">
+        <div class="profile" style="padding-bottom: 50px;">
+          <img src="{% static "img/writing.png" %}" alt="boy-img" height="150px" width="150px">
+          <h2>What I've been doing.</h2>
+          <p class="intro">For the past few months, I've been trying to assemble "pipelines" that would build and deploy applications to
+          the cloud. I've just scratched the surface and I've realized that there is so much to learn and try.
+          And so, I've started a few projects that will help solidify the skills necessary for becoming a Cloud architect.
+          </p>
+        </div>
+        <div class="skills" style="background-color: #A5D2A5; padding: 100px 100px; color: white;">
+          <img src="{% static "img/wordpress-on-aws.png" %}" height="373px" width="781px" border-color="black">
+          <h2 style="padding-bottom: 0; color: white;">Infrastructure as code.</h2>
+          <p><strong>Cloudformation/Terraform</strong></p>
+            <p>I'm a software guy, so I was surprised to hear that infrastructure as code was a thing.<br>
+              To learn, I've been working on creating both Terraform & Cloudformation templates of the same <br>
+              infrastructure - a Wordpress multi-tier architecture.
+            </p>
+          <a class="btn" href="https://github.com/boppatea/aws-cfn-basic-templates">VIEW ON GITHUB</a>
+          </div>
+          <div class="skills" style="background-color: #7F7FFF; padding: 100px 100px; color: white;">
+            <img src="{% static "img/docker.png" %}" alt="aws-img" height="100px" width="100px">
+            <h2 style="padding-bottom: 0; color: white;">Automation Pipeline.</h2>
+            <p>
+              Besides the fact th
+            </p>
+          </div>
+          <div class="skill-row">
+              <img class="cloud-img" src="{% static "img/cloud-computing.png" %}" alt="aws-img">
+              <h3>Cloud compute.</h3>
+              <p>But my best skill is deploying applications to the cloud. I'm capable of building cloud infrastructure to deploy any application or service
+                in a cost-effective and performance-driven way.
+              </p>
+            </div>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <div class="contact-me" style="padding-top:75px;padding-bottom: 100px;">
+          <h2>Get In Touch</h2>
+          <h3>If you want an inquisitive person on your team.</h3>
+          <p class="contact-message">Either way, join my Newsletter or read my blog! They provide insight on my on-going journey. If you have project ideas that you want to share, let me know. </p>
+          <a class="btn" href="jeongjoo.park@outlook.com">CONTACT ME</a>
+        </div>
+      </div>
+    {% endblock %}
+    {% block foot_block %}
+    {% endblock %}

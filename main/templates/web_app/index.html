@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+{% extends "web_app/base.html" %}
+{% load staticfiles %}
+
+  {% block nav_block %}
+    <div class="top-container">
+      <img class="top-cloud" src="{% static "img/upload.png" %}" alt="cloud-img" height="100px" width="100px">
+      <h1>I'm Jeong Joo.</h1>
+      <p class="softext">a software engineer.</p>
+      <img class="bottom-cloud" src="{% static "img/upload.png" %}" alt="cloud-img" height="100px" width="100px">
+      <img src="{% static "img/land.svg" %}" alt="land-img">
+    </div>
+    <div class="middle-container">
+        <div class="profile">
+          <img src="{% static "img/generated.svg" %}" alt="boy-img" height="300px" width="300px">
+          <h2>Hello.</h2>
+          <p class="intro">I'm a cyber security engineer by major, a software developer/engineer by profession and an AWS associate by choice.</p>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <div class="skills">
+          <h2>What I can do.</h2>
+          <div class="skill-row">
+            <img class="code-img" src="{% static "img/dynamic.png" %}">
+            <h3>Develop what you need.</h3>
+            <p>
+              I'm a developer, so I know how to create back-end applications using the latest technologies available.
+              I'm most comfortable with Python & Django, while having a strong grasp with NodeJS & many npm modules.
+            </p>
+          </div>
+          <div class="skill-row">
+            <img class="micro-img" src="{% static "img/docker.png" %}">
+            <h3>Bundle up applications.</h3>
+            <p>
+                I'm familiar with microservice architectures & containerization. I've been exposed to Docker and its entirety, while managing its containers with Kubernetes.
+            </p>
+          </div>
+          <div class="skill-row">
+              <img class="cloud-img" src="{% static "img/cloud-computing.png" %}">
+              <h3>Cloud compute.</h3>
+              <p>But my best skill is deploying applications to the cloud. I'm capable of building cloud infrastructure to deploy any application or service
+                in a cost-effective and performance-driven way.
+              </p>
+            </div>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <div class="contact-me" style="padding-top:75px;">
+          <h2>Get In Touch</h2>
+          <h3>If you want an inquisitive person on your team.</h3>
+          <p class="contact-message">Either way, join my newsletter or read my blog! They provide insight on my on-going journey. If you have project ideas that you want to share, let me know. </p>
+          <a class="btn" href="jeongjoo.park@outlook.com">CONTACT ME</a>
+        </div>
+      </div>
+    {% endblock %}
+    {% block foot_block %}
+    {% endblock %}
